@@ -3,7 +3,7 @@
 """
 
 import sys
-sys.path.insert(0, '../../Utilities/')
+# sys.path.insert(0, '../../Utilities/')
 sys.path.insert(0, 'Utilities/')
 
 import os
@@ -18,7 +18,7 @@ import time
 from itertools import product, combinations
 from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-# from plotting import newfig, savefig
+from Utilities.plotting import newfig, savefig
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import matplotlib.gridspec as gridspec
 
