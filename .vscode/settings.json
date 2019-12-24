@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/opt/miniconda3/envs/TF_1/bin/python"
+    "python.pythonPath": "/opt/miniconda3/envs/TF_1/bin/python",
+    "python.envFile": "${workspaceFolder}/dev.env", 
+    "python.terminal.executeInFileDir":	true
 }

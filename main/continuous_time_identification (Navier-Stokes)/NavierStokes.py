@@ -3,8 +3,8 @@
 """
 
 import sys
-# sys.path.insert(0, '../../Utilities/')
-sys.path.insert(0, 'Utilities/')
+sys.path.insert(0, '../../Utilities/')
+# sys.path.insert(0, '/Utilities/plotting')
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
@@ -18,7 +18,9 @@ import time
 from itertools import product, combinations
 from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-from Utilities.plotting import newfig, savefig
+# import Utilities.plotting
+# from plotting import newfig, savefig
+from plotting import newfig, savefig
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import matplotlib.gridspec as gridspec
 
@@ -216,7 +218,7 @@ if __name__ == "__main__":
     layers = [3, 20, 20, 20, 20, 20, 20, 20, 20, 2]
     
     # Load Data
-    data = scipy.io.loadmat('main/Data/cylinder_nektar_wake.mat')
+    data = scipy.io.loadmat('../Data/cylinder_nektar_wake.mat')
            
     U_star = data['U_star'] # N x 2 x T
     P_star = data['p_star'] # N x T
