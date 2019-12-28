@@ -218,7 +218,7 @@ if __name__ == "__main__":
     model = PhysicsInformedNN(x0, u0, x1, u1, layers, dt, lb, ub, q)
     model.train(nIter = 50000)
     
-    U0_pred, U1_pred = model.predict(x_star)    """"""
+    U0_pred, U1_pred = model.predict(x_star)
         
     lambda_1_value = model.sess.run(model.lambda_1)
     lambda_2_value = np.exp(model.sess.run(model.lambda_2))
