@@ -251,7 +251,7 @@ if __name__ == "__main__":
     
     ax.legend(loc='upper center', bbox_to_anchor=(0.1, -0.3), ncol=2, frameon=False)
     
-    # savefig('./figures/AC')  
+    savefig('./figures/AC')  
     
 
     
