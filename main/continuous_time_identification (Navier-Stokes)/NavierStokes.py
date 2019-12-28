@@ -13,7 +13,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io
-from scipy.interpolate import griddata1
+from scipy.interpolate import griddata
 import time
 from itertools import product, combinations
 from mpl_toolkits.mplot3d import Axes3D
